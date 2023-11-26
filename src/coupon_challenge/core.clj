@@ -6,7 +6,7 @@
 (def ferrariCar (struct car "ferrari" 100000))
 (def fiatCar (struct car "fiat" 20000))
 
-;(println  (:CarPrice bmwCar)  )
+
 
 (def validCoupons [1234 9000 7777])
 
@@ -54,21 +54,21 @@
   (def checkBool (checkCoupon coupon))
   (def result (calculatePrice budget checkBool) )
   (println "Is the coupon valid: " checkBool)
-  (println result)
+  (println (str result))
   (println "\n\n")
   )
 
-;(println "Invalid Coupon; budget 100000 should return Ferrari 100k")
-;(-main 100000 1234888)
-;
-;(println "Valid Coupon; budget 100000 should return Ferrari 80k")
-;(-main 100000 1234)
-;
-;(println "Valid Coupon; budget 50000 should return BMW 48k")
-;(-main 50000 1234)
-;
-;(println "Invalid Coupon; budget 50000 should return invalid coupon and FIAT 20k")
-;(-main 50000 9999)
-;
-;(println "Invalid Coupon; budget 19999 should return invalid coupon and 0")
-;(-main 50000 9999)
+(println "Invalid Coupon; budget 100000 should return Ferrari 100k")
+(-main 100000 1234888)
+
+(println "Valid Coupon; budget 100000 should return Ferrari 80k")
+(-main 100000 1234)
+
+(println "Valid Coupon; budget 50000 should return BMW 48k")
+(-main 50000 1234)
+
+(println "Invalid Coupon; budget 50000 should return invalid coupon and FIAT 20k")
+(-main 50000 9999)
+
+(println "Invalid Coupon; budget 19999 should return invalid coupon and 0")
+(-main 1500 9999)
