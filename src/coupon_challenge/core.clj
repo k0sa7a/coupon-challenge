@@ -1,4 +1,5 @@
-(ns coupon-challenge.core)
+(ns coupon_challenge.core
+  (:gen-class))
 
 (defstruct car :CarBrand :CarPrice)
 
